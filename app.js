@@ -1,6 +1,9 @@
 import dotenv from 'dotenv';
 import { Client } from 'discord.js';
 import { createRequire } from 'module';
+import firebase from 'firebase/app';
+
+
 const require = createRequire(import.meta.url);
 const { prefix } = require('./config.json');
 
