@@ -42,4 +42,15 @@ client.on('message', msg => {
 	}
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORD_TOKEN);
+
+function initFirebase() {
+	const config = {
+		apiKey: process.env.FIREBASE_API_KEY,
+		authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+		databaseURL: process.env.FIREBASE_DATABASE_URL,
+		storageBucket: process.env.FIREBASE_STORAGE_BUCKET
+	};
+	firebase.initializeFirebase(config);
+	return firebase.database();
+}
