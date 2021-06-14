@@ -21,4 +21,6 @@ jobs:
           heroku_api_key: ${{secrets.QA_HEROKU_API_KEY}}
           heroku_app_name: "slinky-bot-123"
           heroku_email: "patinobrian@gmail.com"
-          env: ".env.qa"
+          procfile: "web: npm start"
+        env:
+          HD_DISCORD_TOKEN: ${{secrets.QA_DISCORD_TOKEN}}
