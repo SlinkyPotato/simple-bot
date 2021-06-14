@@ -12,5 +12,13 @@
   "type": "module",
   "devDependencies": {
     "eslint": "^7.28.0"
+  }, 
+  "scripts": {
+    "test": "mocha -r dotenv/config src/test/**/*.test.js",
+    "qa": "node -r dotenv/config app.js dotenv_config_path=.env.qa",
+    "start": "node -r dotenv/config app.js"
+  },
+  "engines": {
+    "yarn": "1.x"
   }
 }
