@@ -21,4 +21,4 @@ jobs:
           heroku_api_key: ${{secrets.QA_HEROKU_API_KEY}}
           heroku_app_name: "slinky-bot-123"
           heroku_email: "patinobrian@gmail.com"
-          procfile: "web: npm start dotenv/config app.js dotenv_config_path=.env.qa"
+          procfile: "web: yarn qa"
