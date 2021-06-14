@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import { Client } from 'discord.js';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-const { prefix } = require('./config.json');
+const { prefix } = require('./config.json'); 
 
 dotenv.config();
 const client = new Client();
