@@ -20,6 +20,7 @@
     "start": "node -r dotenv/config app.js"
   },
   "engines": {
-    "yarn": "1.x"
+    "yarn": "1.x",
+    "node": "14.17.0"
   }
 }

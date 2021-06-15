@@ -8,7 +8,7 @@ jobs:
   deploy:
     environment:
       name: qa-env
-      url: https://slinky-bot-123.herokuapp.com/
+      url: https://simple-bot-123.herokuapp.com/
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -19,8 +19,6 @@ jobs:
         uses: AkhileshNS/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.QA_HEROKU_API_KEY}}
-          heroku_app_name: "slinky-bot-123"
+          heroku_app_name: "simple-bot-123"
           heroku_email: "patinobrian@gmail.com"
-          justlogin: true
-      - name: Run QA build
-        run: heroku run:detached -a slinky-bot-123 yarn qa
+
