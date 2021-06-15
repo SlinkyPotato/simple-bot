@@ -23,4 +23,4 @@ jobs:
           heroku_email: "patinobrian@gmail.com"
           justlogin: true
       - name: Run QA build
-        run: yarn qa
+        run: heroku run -a slinky-bot-123 yarn qa
