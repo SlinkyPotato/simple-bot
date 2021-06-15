@@ -1,9 +1,9 @@
 name: Deploy to QA Environment
 on:
   push:
-    branches: [develop, feature/github-actions-integration]
+    branches: [develop]
   pull_request:
-    branches: [develop, feature/github-actions-integration]
+    branches: [develop]
 jobs:
   deploy:
     environment:
