@@ -16,6 +16,7 @@
   "scripts": {
     "test": "mocha -r dotenv/config src/test/**/*.test.js",
     "qa": "node -r dotenv/config app.js dotenv_config_path=.env.qa",
+    "prod": "node -r dotenv/config app.js dotenv_config_path=.env.prod",
     "start": "node -r dotenv/config app.js"
   },
   "engines": {
